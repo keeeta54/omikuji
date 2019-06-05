@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day1taskApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CE-qf-e1g">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3GC-d9-SsP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kjC-5t-o1n">
+                                <rect key="frame" x="227" y="134" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="kAG-OD-PzD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-82-r5e">
+                                <rect key="frame" x="54" y="154.5" width="31" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4SG-Xt-Gzi"/>
+                                    <constraint firstAttribute="width" constant="60" id="97M-nH-g01"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="tasu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLx-Kc-Bhy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyw-dP-Ssb">
+                                <rect key="frame" x="119" y="154.5" width="30" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Kj4-yA-vep"/>
+                                    <constraint firstAttribute="width" constant="60" id="o7I-zG-Eyi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="hiku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8UW-ou-1bM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-0U-dj8">
+                                <rect key="frame" x="268" y="154.5" width="31" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RU1-5X-X58"/>
+                                    <constraint firstAttribute="width" constant="60" id="Szw-OK-0Xw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="waru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwz-yJ-Oiz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E34-cF-6eA">
+                                <rect key="frame" x="339" y="184" width="31" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ggH-h4-qOR"/>
+                                    <constraint firstAttribute="height" constant="60" id="ohJ-Hg-zZI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="kakeru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGm-1o-Q9H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbs-80-ApJ">
+                                <rect key="frame" x="190" y="184" width="35" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="V0A-Pe-6d4"/>
+                                    <constraint firstAttribute="width" constant="60" id="X8n-8Y-u0q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="kesu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQ2-zv-89F"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40I-vA-rYL">
+                                <rect key="frame" x="20" y="134" width="169" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ABU-we-Qy8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7CE-qf-e1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BtC-oH-1C0"/>
+                            <constraint firstItem="bbs-80-ApJ" firstAttribute="leading" secondItem="Yyw-dP-Ssb" secondAttribute="trailing" constant="5" id="MSV-qw-0Xe"/>
+                            <constraint firstItem="E34-cF-6eA" firstAttribute="leading" secondItem="YJF-0U-dj8" secondAttribute="trailing" constant="5" id="PDg-VJ-d73"/>
+                            <constraint firstItem="YJF-0U-dj8" firstAttribute="leading" secondItem="bbs-80-ApJ" secondAttribute="trailing" constant="5" id="QJC-Pr-xzv"/>
+                            <constraint firstItem="40I-vA-rYL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bWm-pz-zUX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7CE-qf-e1g" secondAttribute="trailing" constant="20" id="dvy-oO-Grn"/>
+                            <constraint firstItem="kjC-5t-o1n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="lE8-KS-ENI"/>
+                            <constraint firstItem="Yyw-dP-Ssb" firstAttribute="leading" secondItem="Nhs-82-r5e" secondAttribute="trailing" constant="5" id="sQS-uF-2Sa"/>
+                            <constraint firstItem="7CE-qf-e1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xxD-E7-qPg"/>
+                            <constraint firstItem="YJF-0U-dj8" firstAttribute="top" secondItem="kjC-5t-o1n" secondAttribute="bottom" constant="20" id="zJt-9g-J7h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lavel" destination="7CE-qf-e1g" id="y3r-Ho-Dzn"/>
+                        <outlet property="leftText" destination="40I-vA-rYL" id="uqY-U2-hRO"/>
+                        <outlet property="rightText" destination="kjC-5t-o1n" id="JKj-gw-d1P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
